@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import API from "../API"
 
 const Projects = () => {
-    const [projects, setProjects] = useState()
-    useEffect(() => {
-        API.projects
-        .fetchAll()
-        .then(data =>{
-            console.log(data)
-            setProjects(data)
-        })
-    }, [])
+    const projects = API.projects.fetchAll()
     return ( 
         <>
         {projects.map(project => {
@@ -25,4 +17,4 @@ const Projects = () => {
      )
 }
  
-export default Projects;
+export default Projects

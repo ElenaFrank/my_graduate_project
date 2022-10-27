@@ -61,12 +61,7 @@ const projects = [
     }
 ]
 
-const fetchAll = () => {
-    new Promise(resolve => {
-        window.setTimeout(function(){
-            resolve(projects)
-        }, 1)
-    })
+export function fetchAll() {
+    console.log("What happened?????")
+    return projects
 }
- 
-export default fetchAll
