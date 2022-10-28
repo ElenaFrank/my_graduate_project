@@ -14,7 +14,7 @@ const Projects = () => {
             <>
             <tr scope="row" key={project.id}>
             <td role={"button"}>{project.name}</td>
-            <td>{project.time}</td>
+            <td><i className="bi bi-trash text-grey" role={"button"}></i></td>
             </tr>
             </>
 
