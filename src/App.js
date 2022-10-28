@@ -1,10 +1,9 @@
 import Projects from "./components/projects"
-import Test from "./components/test";
+// import Test from "./components/test";
 
 function App() {
   return (
-    <Projects/>,
-    <Test />
+    <Projects/>
   )
 }
 

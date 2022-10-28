@@ -25,9 +25,8 @@ const Test = () => {
     </tr>
   </tbody>
 </table>
-
-
     )
 }
 
 export default Test
+
