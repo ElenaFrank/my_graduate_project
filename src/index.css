@@ -1,3 +1,6 @@
+html, #root {
+  background: #212529;
+}
 body {
   background-color: #212529;
   margin: 0;
@@ -11,4 +14,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg {
+  background-image: var(--bs-gradient);
+}
+
+tr {
+  margin-top: 2rem;
 }

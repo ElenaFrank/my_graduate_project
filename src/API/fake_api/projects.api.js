@@ -1,17 +1,26 @@
+// const events = [
+//     {"9i":"установка кассы"},
+
+
+// ]
+
 const projects = [
     {
         id: "256",
         name: "Подключить кассу Атол",
+        events: ["Подключить кассу"],
         time: 1
     },
     {
         id: "24k",
         name: "обновить 1С Розница базовая",
+        events: ["Сделать копию", "Обновление бд"],
         time: 2
     },
     {
         id: "ыв5",
         name: "Настроить весы",
+        events: ["Подключить весы"],
         time: 1.5
     },
     {
@@ -62,6 +71,5 @@ const projects = [
 ]
 
 export function fetchAll() {
-    console.log("What happened?????")
     return projects
 }
