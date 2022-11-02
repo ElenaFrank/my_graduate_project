@@ -73,3 +73,7 @@ const projects = [
 export function fetchAll() {
     return projects
 }
+
+export function getById(id) {
+    return projects.find(project=> project.id ===id)
+}

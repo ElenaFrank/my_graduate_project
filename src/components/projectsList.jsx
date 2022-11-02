@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import API from "../API"
 import "bootstrap/dist/css/bootstrap.css"
 
-const Projects = () => {
+const ProjectsList = () => {
     const [projects, setProjects] = useState(API.projects.fetchAll())
     const handleDeleteRow = (id) => {
         const answer = window.confirm("Do you want delete this project?")
@@ -32,4 +32,4 @@ const Projects = () => {
      )
 }
  
-export default Projects
+export default ProjectsList
