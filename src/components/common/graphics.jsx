@@ -1,7 +1,7 @@
 import React from "react"
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts"
 
-const Main = () => {
+const Graphics = () => {
     const data = [
         { name: "20.10", uv: 4000, pv: 2400 },
         { name: "23.10", uv: 6100, pv: 3500 },
@@ -26,4 +26,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Graphics

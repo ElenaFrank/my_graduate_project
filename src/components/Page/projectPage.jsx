@@ -7,11 +7,12 @@ const ProgectPage = ({comeBack, id}) => {
 
     useEffect(()=> {
         API.projects.getById(id)
-        .then(data => setProjectData(data))
+        .then(data => {
+            setProjectData(data)
+            console.log(data)
+        })
         
     })
-
-    console.log(projectData)
     
     if(projectData) {
     return ( 
@@ -22,7 +23,7 @@ const ProgectPage = ({comeBack, id}) => {
                 <button onClick={comeBack} > Back!</button>
         </>
      )
-    } 
+    }
     return "Loading..."
 
     // return <h1 style={{color: "white"}}> Here is user page</h1>

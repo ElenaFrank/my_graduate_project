@@ -26,7 +26,7 @@ const ProjectsList = () => {
                     return (
                         <>
                         <tr key={project.id}>
-                        <td className ="bg"><Link key={project.id} to = {`projects/${project.id}`}>{project.name}</Link></td>
+                        <td className ="bg"><Link key={project.id} to = {`/projects/${project.id}`}>{project.name}</Link></td>
                         <td className ="bg"><button onClick={()=>handleDeleteRow(project.id)}>Delete</button></td>
                         </tr>
                         </>
