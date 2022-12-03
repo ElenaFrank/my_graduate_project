@@ -1,5 +1,5 @@
 // import ProjectsList from "./components/projectsList"
-import NavBar from "./components/navBar"
+import NavBar from "./components/ui/navBar"
 import {Switch, Route} from "react-router-dom"
 import Main from "./layouts/main"
 import Projects from "./layouts/projects"
@@ -10,7 +10,7 @@ function App() {
     <div>
         <NavBar />
         <Switch>
-          <Route path="/" exact component = {Main} />
+          <Route path="/main/:type?" component = {Main} />
           <Route path="/projects/:projectId?" component = {Projects} />
           <Route path="/analitic" component = {Analitic} />
         </Switch>

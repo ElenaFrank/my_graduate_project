@@ -1,6 +1,6 @@
 import React from "react"
-import ProjectsList from "../components/projectsList"
-import ProgectPage from "../components/projectPageCreateEdit"
+import ProjectsList from "../components/Page/projectsList"
+import ProgectPage from "../components/Page/projectPage"
 import { useParams, useHistory } from "react-router-dom"
 
 const Projects = () => {
