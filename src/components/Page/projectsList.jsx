@@ -9,7 +9,7 @@ const ProjectsList = () => {
     useEffect(() => {
         API.projects.fetchAll()
         .then(data => setProjects(data))
-    })
+    }, [])
     
     const handleDeleteRow = (id) => {
         const answer = window.confirm("Do you want delete this project?")
