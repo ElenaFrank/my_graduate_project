@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="navbar navbar-expand-lg bg-light">
                     <ul className="nav">
             <li className="nav-item">
-                <Link className="nav-link activ text-dark" exact to="/main">Главная</Link>
+                <Link className="nav-link activ text-dark" exact to="/">Главная</Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link active text-dark" to="/projects/">Проекты</Link>

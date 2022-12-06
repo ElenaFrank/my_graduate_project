@@ -166,7 +166,7 @@ const getById = (id) =>
     new Promise((resolve) => {
         window.setTimeout(function () {
             resolve(projects.find((project) => project.id === id))
-        }, 1)
+        }, 1000)
     })
 
 export default {
