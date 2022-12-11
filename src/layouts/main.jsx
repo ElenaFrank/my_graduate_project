@@ -13,9 +13,7 @@ const Main = () => {
     return (
     <>
         <h1 style={{color: "white"}}>Main</h1>
-        {/* {type === "reg" && <RegisterForm /> }
-        {!type && <LoginForm />}
-        <Link to={!type ? "/reg" : ""}>Перейти в другую форму</Link> */}
+
         <div className="container mt-5" style={{background:"darkgray", color: "#212529"}}>
         <div className="row">
         <div className=".col-md-6 .offset-md-3 shadow p-4">
