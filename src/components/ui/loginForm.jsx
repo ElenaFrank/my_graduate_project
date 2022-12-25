@@ -28,15 +28,7 @@ const LoginForm = () => {
             value={data.password}
             onChange = {hadleChange}
         />
-       
-       {/* <div>
-       <label>Password</label>
-        <input type="password" name="password" id="password"></input>
-       </div>  */}
         </form>
-
-
-       {/* <button className="mt-4" onClick={toggleHiddenForm}>{!hiddenValue ? "Register" : "Login in"}</button> */}
 
         </>
     
