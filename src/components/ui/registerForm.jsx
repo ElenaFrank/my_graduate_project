@@ -1,8 +1,8 @@
 import React, {useState} from "react"
-import TextField from "../common/form/textField"
+import TextField from "../common/form/textField";
 
 const RegisterForm = () => {
-    const [data, setData] = useState({ email: "", password: ""})
+    const [data, setData] = useState({ email: "", password: "", stayOn: false })
 
     const hadleChange = (target) => {
         setData(prevstate => ({
@@ -28,12 +28,10 @@ const RegisterForm = () => {
             value={data.password}
             onChange = {hadleChange}
         />
-       
         </form>
 
         </>
-    
     )
 }
  
-export default RegisterForm;
+export default RegisterForm

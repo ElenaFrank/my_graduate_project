@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="navbar navbar-expand-lg bg-light">
                     <ul className="nav">
             <li className="nav-item">
-                <Link className="nav-link activ text-dark" exact to="/">Главная</Link>
+                <Link className="nav-link activ text-dark" to="/">Главная</Link>
             </li>
             <li className="nav-item">
                 <Link className="nav-link active text-dark" to="/projects/">Проекты</Link>
@@ -21,3 +21,6 @@ const NavBar = () => {
 }
  
 export default NavBar
+
+
+/// эти изменения можно снести
