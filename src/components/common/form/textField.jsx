@@ -2,7 +2,7 @@ import React from "react"
 import PropType from "prop-types"
 import { useState } from "react"
 
-const TextField = ({type, name, label, value, onChange}) => {
+const TextField = ({type, name, label, value, onChange, error}) => {
     const handleChange = ({target}) => {
         onChange({name: target.name, value: target.value})
     }
@@ -39,6 +39,11 @@ const TextField = ({type, name, label, value, onChange}) => {
 
                     }
                 </div>
+                {error && 
+                <div>
+                    {error}
+                </div>
+                }
         </div>
 
     )
