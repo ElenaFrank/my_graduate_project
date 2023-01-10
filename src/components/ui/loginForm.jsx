@@ -1,5 +1,6 @@
 import React, {useState} from "react"
-import TextField from "../common/form/textField";
+import TextField from "../common/form/textField"
+import CheckBoxField from "../common/form/checkBoxField"
 
 const LoginForm = () => {
     const [data, setData] = useState({ email: "", password: "", stayOn: false })
@@ -28,6 +29,7 @@ const LoginForm = () => {
             value={data.password}
             onChange = {hadleChange}
         />
+        <CheckBoxField id = "stayOn" value={data.stayOn}>Stay on system</CheckBoxField>
        
         </form>
 
